@@ -7,7 +7,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello from V2 my guy! Only the beginning and only up from here.</h1>
+        <h1>V2 priorities:.</h1>
+        <p> functional auth, booking, and payment (custom erm) </p>
       </header>
     </div>
   );
