@@ -6,9 +6,6 @@ const App = () => {
         <div>
             <Tutors />
         </div>
-
-
     )
-
 };
 export default App;
