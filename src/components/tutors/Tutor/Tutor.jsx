@@ -1,13 +1,17 @@
 import React from 'react'
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@material-ui/core';
 
-import { AddShoppingCart, CallMissedSharp } from '@material-ui/icons'
-import Products from '../Tutors';
+import { AddShoppingCart } from '@material-ui/icons'
+import Tutors from '../Tutors';
 
-const Tutor = ({ product }) => {
+import useStyles from './styles'
+
+
+const Tutor = ({ tutor }) => {
+    const classes = useStyles();
   return (
     <Card className={classes.root}>
-        <CardMedia className={classes.media} image='' title={tutor.name} />
+        <CardMedia className={classes.media} image={tutor.image} title={tutor.name} />
         <CardContent>
             <div className={classes.CardContent}>
                 <Typography variant ="h5" gutterBottom>
@@ -18,8 +22,8 @@ const Tutor = ({ product }) => {
                 </Typography>
 
             </div>
-            <Typography variant="h2" color="textSecondary">
-                {product.description}
+            <Typography variant="body2" color="textSecondary">
+                {tutor.description}
             </Typography>
         </CardContent>
         <CardActions disableSpacing className={classes.cardActions}>
